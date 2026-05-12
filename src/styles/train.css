@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  background: #f2f2f2;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  color: #0057b7;
+
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 320px;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+
+  font-size: 16px;
+}
+
+.train-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+.train-card {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.train-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 6px 15px rgba(0,0,0,0.15);
+}
+
+.train-card h2 {
+  color: #0057b7;
+}
+
+button {
+  margin-top: 10px;
+
+  background: #0057b7;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #003f88;
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+}
