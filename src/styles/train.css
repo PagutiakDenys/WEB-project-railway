@@ -101,3 +101,78 @@ button:hover {
   }
 
 }
+
+.wagon-container {
+  margin: 20px 0;
+}
+
+.wagon-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.active-wagon {
+  background: orange !important;
+}
+
+.seat-map {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 70px);
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.seat {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.seat:hover {
+  transform: scale(1.05);
+}
+
+.free {
+  background: green;
+}
+
+.selected {
+  background: blue;
+}
+
+.booked {
+  background: red;
+}
+
+.booking-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  max-width: 400px;
+}
+
+.booking-form input {
+  width: 100%;
+}
